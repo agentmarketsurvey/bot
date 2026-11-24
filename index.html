@@ -7,25 +7,32 @@
 <h1>AgentMarketSurvey</h1>
 <p>You are probably here because our bot visited your website. This page explains what it does.</p>
 <h2>What it collects</h2>
-<p>For each property advertised for sale, the bot records only information shown
-on the agent's public listing: the address, asking price, number of bedrooms,
-whether it is for sale or under offer, the date it was first seen, and which
-branch of the agent handles it.</p>
-<p>Where the listing names the consultant dealing with a property and shows their
-work email address, or shows a branch email address, the bot records that name
-and address so that the agent can be contacted about their business. It does not
-collect personal phone numbers, photographs, descriptions, or any information
-about buyers or sellers. To have your details removed, email
+<p>For each property an agent advertises for sale or to let, homes and commercial property, the bot records only
+information shown on the agent's public listing: the address, the asking price or rent, the size or number of
+bedrooms, the type of property, its status (for example for sale, under offer, sold subject to contract or let
+agreed), the date it was first seen and which branch handles it.</p>
+<p>It also records the agency's office contact details and logo, and, where the agency publishes them on its
+website, the names, job titles, professional biographies and work contact details of its staff, so that the agency
+can be contacted about its business. It does not record photographs, home addresses or personal contact details,
+or any information about buyers, sellers or tenants. It keeps copies of some public pages so that its readings can
+be checked.</p>
+<p>We also use public registers: Companies House (business roles only, never addresses) and regulators' registers.</p>
+<p>To have your details removed, email
 <a href="mailto:agentmarketsurvey@gmail.com">agentmarketsurvey@gmail.com</a>
 and we will delete them within one working day.</p>
 <h2>How it behaves</h2>
 <ul>
-<li>It visits once a day, with at least 5 seconds between requests.</li>
-<li>It identifies itself as <code>AgentMarketSurvey/1.0</code> and follows your robots.txt and any crawl-delay.</li>
-<li>It stops requesting a site if the site answers with an error such as 403 or 429.</li>
+<li>It reads each website about once a week, and occasionally a single page on another day to check a reading.</li>
+<li>It waits at least 5 seconds between requests to the same website.</li>
+<li>It identifies itself as <code>AgentMarketSurvey/1.0</code>, follows your robots.txt and any crawl-delay, and
+skips a website whose robots.txt cannot be read.</li>
+<li>It stops requesting a site at the first refusal (such as a 403 or 429 error) and does not try to get around it,
+or around any bot check.</li>
 </ul>
 <h2>What it is for</h2>
-<p>A weekly summary of market activity by estate agents.</p>
+<p>Summaries of property market activity by estate agents and commercial property agents, for the law firms we work
+with.</p>
 <h2>Opt out or ask a question</h2>
-<p>Email <a href="mailto:agentmarketsurvey@gmail.com">agentmarketsurvey@gmail.com</a> </p>
+<p>Email <a href="mailto:agentmarketsurvey@gmail.com">agentmarketsurvey@gmail.com</a>. To stop the bot visiting
+your site, add <code>User-agent: AgentMarketSurvey</code> and <code>Disallow: /</code> to your robots.txt.</p>
 </body></html>
